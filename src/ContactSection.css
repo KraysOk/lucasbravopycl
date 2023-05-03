@@ -26,6 +26,7 @@
   .contact-info {
     list-style: none;
     padding: 0;
+    display: block;
   }
   
   .contact-info li {

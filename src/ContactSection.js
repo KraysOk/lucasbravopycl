@@ -14,32 +14,32 @@ function ContactSection() {
             <p>Estamos siempre disponibles para ayudarte en lo que necesites.</p>
             <ul className="contact-info">
               <li>
-                <i className="fas fa-phone"></i> Teléfono: +XX XXX XXX XXX
+                <i className="fas fa-phone"></i> Teléfono: +569 59674346
               </li>
               <li>
-                <i className="fas fa-envelope"></i> Email: correo@dominio.com
+                <i className="fas fa-envelope"></i> Email: lucasbravopy@gmail.com
               </li>
             </ul>
             <ul className="social-links">
               <li>
-                <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">
+                <a href="https://web.facebook.com/lucasbravopy/" target="_blank" rel="noreferrer">
                     <FontAwesomeIcon icon={faFacebook} />
                 </a>
               </li>
               <li>
-                <a href="https://www.twitter.com/" target="_blank" rel="noreferrer">
+                <a href="https://twitter.com/lucasbravopy" target="_blank" rel="noreferrer">
                     <FontAwesomeIcon icon={faTwitter} />
                 </a>
               </li>
               <li>
-                <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">
+                <a href="https://www.instagram.com/lucasbravopy/" target="_blank" rel="noreferrer">
                     <FontAwesomeIcon icon={faInstagram} />
                 </a>
               </li>
             </ul>
           </div>
           <div className="col-md-6">
-            <a href="https://wa.me/XXXXXXXXXXX" target="_blank" rel="noreferrer" className="btn-whatsapp">
+            <a href="https://wa.me/56959674346" target="_blank" rel="noreferrer" className="btn-whatsapp">
               <i className="fab fa-whatsapp"></i> Contacta con nosotros en WhatsApp
             </a>
           </div>
