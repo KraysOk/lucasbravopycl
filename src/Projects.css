@@ -1,0 +1,59 @@
+.section-one {
+    background-color: #000;
+    color: #fff;
+    padding: 100px 0;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #005c61;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #fff;
+    color: #005c61;
+  }
+
+  .gallery {
+    display: grid;
+    grid-gap: 20px;
+  }
+  
+  .project {
+    border: 1px solid rgb(32, 32, 32);
+    padding: 0px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .project:hover {
+    background-color: rgb(0, 67, 58);
+  }
+  
+  .project img {
+    width: 100%;
+    height: auto;
+    max-width: 350px;
+  }

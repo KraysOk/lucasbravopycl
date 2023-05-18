@@ -4,12 +4,24 @@ import './App.css';
 import Navbar from './Navbar';
 import SectionOne from './SectionOne';
 import ContactSection from './ContactSection';
+import Projects from './Projects';
 
 function App() {
+  const projects = [
+    {
+      id: 1,
+      image: 'macetafertil1.png',
+      title: 'Maceta Fertil',
+      description: 'Ecommerce Jardinería',
+      link: 'http://macetafertil.lucasbravopy.cl'
+    },
+    // Agrega más proyectos aquí...
+  ];
   return (
     <div>
       <Navbar />
       <SectionOne />
+      <Projects projects={projects} />
       <ContactSection />
     </div>
   );
