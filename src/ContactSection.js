@@ -6,7 +6,7 @@ import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg
 
 function ContactSection() {
   return (
-    <section className="section-two">
+    <section id="contacto" className="section-two">
       <div className="container">
         <div className="row">
           <div className="col-md-6">
@@ -20,7 +20,9 @@ function ContactSection() {
                 <i className="fas fa-envelope"></i> Email: lucasbravopy@gmail.com
               </li>
             </ul>
-            <ul className="social-links">
+          </div>
+          <div className="col-md-6  row d-flex align-items-center">
+          <ul className="social-links">
               <li>
                 <a href="https://web.facebook.com/lucasbravopy/" target="_blank" rel="noreferrer">
                     <FontAwesomeIcon icon={faFacebook} />
@@ -37,8 +39,6 @@ function ContactSection() {
                 </a>
               </li>
             </ul>
-          </div>
-          <div className="col-md-6">
             <a href="https://wa.me/56959674346" target="_blank" rel="noreferrer" className="btn-whatsapp">
               <i className="fab fa-whatsapp"></i> Contacta con nosotros en WhatsApp
             </a>
