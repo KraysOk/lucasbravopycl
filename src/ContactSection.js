@@ -2,7 +2,7 @@ import React from "react";
 import './ContactSection.css';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook, faTwitter, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 function ContactSection() {
   return (
@@ -21,27 +21,34 @@ function ContactSection() {
               </li>
             </ul>
           </div>
-          <div className="col-md-6  row d-flex align-items-center">
-          <ul className="social-links">
-              <li>
-                <a href="https://web.facebook.com/lucasbravopy/" target="_blank" rel="noreferrer">
+          <div className="col-md-6">
+            <div className="contact-social">
+              <ul className="social-links">
+                <li>
+                  <a href="https://www.linkedin.com/in/lucas-dar%C3%ADo-bravo-pay%C3%A1-10034b131/" target="_blank" rel="noreferrer">
+                    <FontAwesomeIcon icon={faLinkedin} />
+                  </a>
+                </li>
+                <li>
+                  <a href="https://web.facebook.com/lucasbravopy/" target="_blank" rel="noreferrer">
                     <FontAwesomeIcon icon={faFacebook} />
-                </a>
-              </li>
-              <li>
-                <a href="https://twitter.com/lucasbravopy" target="_blank" rel="noreferrer">
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/lucasbravopy" target="_blank" rel="noreferrer">
                     <FontAwesomeIcon icon={faTwitter} />
-                </a>
-              </li>
-              <li>
-                <a href="https://www.instagram.com/lucasbravopy/" target="_blank" rel="noreferrer">
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/lucasbravopy/" target="_blank" rel="noreferrer">
                     <FontAwesomeIcon icon={faInstagram} />
-                </a>
-              </li>
-            </ul>
-            <a href="https://wa.me/56959674346" target="_blank" rel="noreferrer" className="btn-whatsapp">
-              <i className="fab fa-whatsapp"></i> Contacta con nosotros en WhatsApp
-            </a>
+                  </a>
+                </li>
+              </ul>
+              <a href="https://wa.me/56959674346" target="_blank" rel="noreferrer" className="btn-whatsapp">
+                <i className="fab fa-whatsapp"></i> Contacta con nosotros en WhatsApp
+              </a>
+            </div>
           </div>
         </div>
       </div>

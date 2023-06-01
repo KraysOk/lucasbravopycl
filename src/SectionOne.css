@@ -1,39 +1,48 @@
 .section-one {
-    background-color: #000;
-    color: #fff;
-    padding: 100px 0;
-    padding: 150px 0px 100px 0px;
-  }
-  
-  .container {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-  }
-  
-  h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-  }
-  
-  p {
-    font-size: 18px;
-    margin-bottom: 30px;
-  }
-  
-  .btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #005c61;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .btn:hover {
-    background-color: #fff;
-    color: #005c61;
-  }
-  
+  background-color: #ffffff;
+  color: #000000;
+  padding: 150px 0;
+  text-align: center;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.cv-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.cv-buttons > .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #2db0b7;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  margin-right: 10px;
+}
+
+.btn:last-child {
+  margin-right: 0;
+}
+
+.btn:hover {
+  background-color: #14888e;
+  color: #fff;
+}

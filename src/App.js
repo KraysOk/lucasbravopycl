@@ -6,6 +6,7 @@ import Navbar from './Navbar';
 import SectionOne from './SectionOne';
 import ContactSection from './ContactSection';
 import Projects from './Projects';
+import Footer from './Footer';
 
 function App() {
   const projects = [
@@ -24,6 +25,7 @@ function App() {
       <SectionOne />
       <Projects projects={projects} />
       <ContactSection />
+      <Footer />
     </div>
   );
 }
