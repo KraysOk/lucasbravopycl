@@ -2,22 +2,24 @@
   flex-direction: row;
   display: flex;
   justify-content: center;
-  position: absolute;
+  position: initial;
   bottom: 100px;
   left: 0;
   width: 100%;
+  margin: 5rem 0rem 0rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 950px) {
   .social-media-icons {
+    position: absolute;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     bottom: unset;
-    top: 50%;
-    transform: translateY(-50%);
     left: 20px;
     width: auto;
+    top: 0rem;
+    margin: 5rem 0rem 0rem;
   }
 }
 
