@@ -1,6 +1,18 @@
 import React from 'react';
 import './Projects.css';
-import macetafertil1 from './macetafertil.png';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faWordpress,
+  faHtml5,
+  faCss3,
+  faBootstrap,
+  faElementor,
+  faOpencart,
+  faPhp,
+  faReact,
+  faJs
+} from '@fortawesome/free-brands-svg-icons';
 
 const Projects = ({ projects }) => {
   const handleProjectClick = (link) => {
@@ -19,9 +31,19 @@ const Projects = ({ projects }) => {
               onClick={() => handleProjectClick(project.link)}
             >
               <div className="project-content">
-                <img src={macetafertil1} alt={project.title} />
-                <h3>{project.title}</h3>
+                <img src={project.image} alt={project.title} />
+                <h4>{project.title}</h4>
                 <p>{project.description}</p>
+                <div className="technologies">
+                  {project.technologies.map((technology) => (
+                    <div className="technology" key={technology.name}>
+                      <div className="technology-icon">
+                        {getTechnologyIcon(technology.name)}
+                      </div>
+                      <span>{technology.name}</span>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           ))}
@@ -29,6 +51,31 @@ const Projects = ({ projects }) => {
       </div>
     </section>
   );
+};
+
+const getTechnologyIcon = (technologyName) => {
+  switch (technologyName) {
+    case 'WordPress':
+      return <FontAwesomeIcon icon={faWordpress} />;
+    case 'HTML':
+      return <FontAwesomeIcon icon={faHtml5} />;
+    case 'CSS':
+      return <FontAwesomeIcon icon={faCss3} />;
+    case 'Bootstrap':
+      return <FontAwesomeIcon icon={faBootstrap} />;
+    case 'Elementor':
+      return <FontAwesomeIcon icon={faElementor} />;
+    case 'WooCommerce':
+      return <FontAwesomeIcon icon={faOpencart} />;
+    case 'PHP':
+      return <FontAwesomeIcon icon={faPhp} />;
+    case 'React':
+      return <FontAwesomeIcon icon={faReact} />;
+    case 'Javascript':
+      return <FontAwesomeIcon icon={faJs} />;
+    default:
+      return null;
+  }
 };
 
 export default Projects;
