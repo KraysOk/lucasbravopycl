@@ -14,6 +14,8 @@ import {
   faJs
 } from '@fortawesome/free-brands-svg-icons';
 
+import faAfterEffects from './aelogo.png';
+
 const Projects = ({ projects }) => {
   const handleProjectClick = (link) => {
     window.open(link, '_blank');
@@ -73,6 +75,8 @@ const getTechnologyIcon = (technologyName) => {
       return <FontAwesomeIcon icon={faReact} />;
     case 'Javascript':
       return <FontAwesomeIcon icon={faJs} />;
+    case 'After Effects':
+      return <img src={faAfterEffects} />;
     default:
       return null;
   }

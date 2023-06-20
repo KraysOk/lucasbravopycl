@@ -5,6 +5,7 @@ import './App.css';
 
 import macetafertilImage from './macetafertil.png';
 import lucasbravopyImage from './lucasbravopy.png';
+import boyarImage from './boyar.png';
 
 import Navbar from './Navbar';
 import SectionOne from './SectionOne';
@@ -42,6 +43,23 @@ function App() {
         { name: 'HTML', icon: 'HTML' },
         { name: 'CSS', icon: 'CSS' },
         { name: 'Bootstrap', icon: 'Bootstrap' },
+      ]
+    },
+    {
+      id: 3,
+      image: boyarImage,
+      title: 'Boyar.cl',
+      description: 'Inmobiliaria',
+      link: 'http://boyar.cl',
+      technologies: [
+        { name: 'PHP', icon: 'PHP' },
+        { name: 'WordPress', icon: 'WP' },
+        { name: 'HTML', icon: 'HTML' },
+        { name: 'CSS', icon: 'CSS' },
+        { name: 'Bootstrap', icon: 'Bootstrap' },
+        //{ name: 'WooCommerce', icon: 'WC' },
+        { name: 'Elementor', icon: 'Elementor' },
+        { name: 'After Effects', icon: 'After Effects'}
       ]
     },
     // Agrega más proyectos aquí...
