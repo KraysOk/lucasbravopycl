@@ -6,12 +6,14 @@ import './App.css';
 import macetafertilImage from './macetafertil.png';
 import lucasbravopyImage from './lucasbravopy.png';
 import boyarImage from './boyar.png';
+import tusitio from './tusitio.png';
 
 import Navbar from './Navbar';
 import SectionOne from './SectionOne';
 import ContactSection from './ContactSection';
 import Projects from './Projects';
 import Footer from './Footer';
+import ServicesList from './ServicesList';
 
 function App() {
   const projects = [
@@ -62,6 +64,22 @@ function App() {
         { name: 'After Effects', icon: 'After Effects'}
       ]
     },
+    {
+      id: 4,
+      image: tusitio,
+      title: 'Solicita Tu Sitio',
+      description: 'Contáctanos Ahora',
+      link: 'https://api.whatsapp.com/send/?phone=56959674346&text&type=phone_number&app_absent=0',
+      technologies: [
+        { name: 'PHP', icon: 'PHP' },
+        { name: 'Javascript', icon: 'JS' },
+        { name: 'React', icon: 'React'},
+        { name: 'Node', icon: 'Node' },
+        { name: 'SQL', icon: 'SQL' },
+        { name: 'HTML', icon: 'HTML' },
+        { name: 'CSS', icon: 'CSS' },
+      ]
+    },
     // Agrega más proyectos aquí...
   ];
   
@@ -70,6 +88,7 @@ function App() {
       <Navbar />
       <SectionOne />
       <Projects projects={projects} />
+      <ServicesList />
       <ContactSection />
       <Footer />
     </div>

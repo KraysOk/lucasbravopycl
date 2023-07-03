@@ -2,6 +2,7 @@ import React from 'react';
 import './Projects.css';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faDatabase } from '@fortawesome/free-solid-svg-icons';
 import {
   faWordpress,
   faHtml5,
@@ -11,7 +12,8 @@ import {
   faOpencart,
   faPhp,
   faReact,
-  faJs
+  faJs,
+  faNode
 } from '@fortawesome/free-brands-svg-icons';
 
 import faAfterEffects from './aelogo.png';
@@ -77,6 +79,10 @@ const getTechnologyIcon = (technologyName) => {
       return <FontAwesomeIcon icon={faJs} />;
     case 'After Effects':
       return <img src={faAfterEffects} />;
+    case 'SQL':
+      return <FontAwesomeIcon icon={faDatabase} />;
+    case 'Node':
+      return <FontAwesomeIcon icon={faNode} />;
     default:
       return null;
   }
