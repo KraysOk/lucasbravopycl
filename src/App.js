@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 import logo from './logo.svg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
@@ -15,7 +16,12 @@ import Projects from './Projects';
 import Footer from './Footer';
 import ServicesList from './ServicesList';
 
+import ReactGA from 'react-ga';
+const TRACKING_ID = "G-6Y20PJFLR9"; // OUR_TRACKING_ID
+ReactGA.initialize(TRACKING_ID);
+
 function App() {
+
   const projects = [
     {
       id: 1,
