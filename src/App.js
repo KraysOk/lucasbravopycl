@@ -17,7 +17,7 @@ import Footer from './Footer';
 import ServicesList from './ServicesList';
 
 import ReactGA from 'react-ga';
-const TRACKING_ID = "G-6Y20PJFLR9"; // OUR_TRACKING_ID
+const TRACKING_ID = "G-4PQ01873CZ"; // OUR_TRACKING_ID
 ReactGA.initialize(TRACKING_ID);
 
 function App() {
