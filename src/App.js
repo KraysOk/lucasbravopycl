@@ -15,12 +15,14 @@ import ContactSection from './ContactSection';
 import Projects from './Projects';
 import Footer from './Footer';
 import ServicesList from './ServicesList';
-
 import ReactGA from 'react-ga';
+import ComprarAhora from './ComprarAhora';
 const TRACKING_ID = "G-4PQ01873CZ"; // OUR_TRACKING_ID
 ReactGA.initialize(TRACKING_ID);
 
+
 function App() {
+
 
   const projects = [
     {
@@ -95,6 +97,7 @@ function App() {
       <SectionOne />
       <Projects projects={projects} />
       <ServicesList />
+      <ComprarAhora />
       <ContactSection />
       <Footer />
     </div>

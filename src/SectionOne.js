@@ -1,4 +1,4 @@
-import React from 'react';
+import React , { useEffect, useState } from 'react';
 import './SectionOne.css';
 
 import cvSpanish from './assets/CV_ESP_LUCAS_BRAVO.pdf';
@@ -6,6 +6,7 @@ import cvEnglish from './assets/CV_ING_LUCAS_BRAVO.pdf';
 import SocialMediaIcons from './SocialMediaIcons';
 
 const SectionOne = () => {
+
   return (
     <section id="inicio" className="section-one">
       <div className="container mt-5">
