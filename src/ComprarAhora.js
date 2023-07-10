@@ -7,12 +7,15 @@ const ComprarAhora = () => {
     const iniciarTransaccion = async () => {
         try {
 
-            const body = {
-                buyOrder: 'O-12345678',
-                sessionId: 'S-87654321',
-                amount: 200000,
-                returnUrl: 'http://tbk-node-test.continuumhq.dev/webpay_plus/commit'
-              };
+          let buyOrder = "O-" + Math.floor(Math.random() * 10000) + 1;
+          let sessionId = "S-" + Math.floor(Math.random() * 10000) + 1;
+
+          const body = {
+              buyOrder,
+              sessionId,
+              amount: 200000,
+              returnUrl: 'http://localhost:3000/retorno-pago'
+            };
             const response = await fetch('http://localhost:3002/api/pago', {
                 method: 'POST',
                 headers: {

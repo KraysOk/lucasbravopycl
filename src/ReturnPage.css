@@ -1,0 +1,16 @@
+.return-page {
+    padding: 25vh 50vh 25vh 50vh;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .return-page h2 {
+    color: #333;
+  }
+  
+  .return-page p {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  

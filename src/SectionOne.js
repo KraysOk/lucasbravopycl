@@ -1,4 +1,4 @@
-import React , { useEffect, useState } from 'react';
+import React from 'react';
 import './SectionOne.css';
 
 import cvSpanish from './assets/CV_ESP_LUCAS_BRAVO.pdf';
